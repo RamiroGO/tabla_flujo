@@ -1,0 +1,30 @@
+      form.classForm {
+        background-color: rgb(0, 119, 128);
+        text-align: center;
+        margin: 10px;
+      }
+
+      div.tableStyle table {
+        margin: 10px auto;
+      }
+      button {
+        font-size: 15px;
+      }
+
+      table {
+        border: solid black 1px;
+        align-items: center;
+      }
+      th {
+        border: solid blue 1px;
+      }
+      td {
+        border: solid red 1px;
+      }
+      th,
+      td {
+        text-align: center;
+      }
+      td.number {
+        text-align: right;
+      }

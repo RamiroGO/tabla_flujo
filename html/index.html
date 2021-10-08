@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Valoración de Recursos</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <form id="transactionForm" class="classForm">
+      <div class="formField">
+        <label>Tipo de Transacción:</label>
+        <div>
+          <div>
+            <label
+              >Ingreso
+              <input
+                type="radio"
+                name="nameTypeTransaction"
+                value="Ingreso"
+            /></label>
+          </div>
+          <div>
+            <label
+              >Egreso
+              <input
+                type="radio"
+                name="nameTypeTransaction"
+                value="Egreso"
+            /></label>
+          </div>
+        </div>
+      </div>
+      <div class="formField">
+        <label
+          >Descripción
+          <input name="nameDescriptionTransaction" />
+        </label>
+      </div>
+      <div class="formField">
+        <label
+          >Monto
+          <input
+            id="amountTransaction"
+            name="nameAmountTransaction"
+            type="number"
+        /></label>
+      </div>
+      <div class="formField">
+        <label>Categoría <input name="nameCategoryTransaction" /></label>
+      </div>
+
+      <button>Añadir</button>
+    </form>
+    <div class="tableStyle">
+      <table id="tableTransaction">
+        <tr>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Monto</th>
+          <th>Categoría</th>
+        </tr>
+        <!-- <tr>
+          <td>Ingreso</td>
+          <td>Sueldo</td>
+          <td class="number">100</td>
+          <td>Trabajo</td>
+        </tr> -->
+      </table>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
