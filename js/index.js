@@ -22,18 +22,18 @@ form_transaction.addEventListener("submit", function (event) {
 });
 
 // Instrucción que se ejecuta después de cargar la página.
-document.addEventListener("DOMContentLoaded", function (event) {
-  // Revisar el localStorage
-  let stringLocalStorage = localStorage.getItem("transactionData");
+document.addEventListener("DOMContentLoaded", () => {
+    // Revisar el localStorage
+    let stringLocalStorage = localStorage.getItem("transactionData");
 
-  // Convertir texto a JSON
-  let arrayJson = JSON.parse(stringLocalStorage) || [];
+    // Convertir texto a JSON
+    let arrayJson = JSON.parse(stringLocalStorage) || [];
 
-  // Recorrer el arreglo y visualizar
-  arrayJson.forEach((row) => {
-    show_newRowInTable(row, "tableTransaction");
+    // Recorrer el arreglo y visualizar
+    arrayJson.forEach((row) => {
+      show_newRowInTable(row, "tableTransaction");
+    });
   });
-});
 
 // Guarda la información
 function saveObjData(key_data, JSONData) {
